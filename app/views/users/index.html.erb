@@ -1,0 +1,21 @@
+<h1 align = center> Listing users </h1>
+
+	<table align = center>
+  		<tr>
+    		<th>Name</th>
+   			<th>Email</th>
+  		</tr>
+
+		<% @user.each do |user|  %>
+		<tr >
+    		<td><%= user.nickname %></td>
+   			<td><%= user.email %></td>
+		</tr>
+		<% end %>
+		<tr>
+			<td><%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %></td>
+		</tr>
+	</table>
+
+
+

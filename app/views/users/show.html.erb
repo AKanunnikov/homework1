@@ -1,0 +1,14 @@
+<% provide(:title, @user.nickname) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.nickname %>
+      </h1>
+    </section>
+    <section>
+    	<%= link_to "Let's Home", users_path %>
+    </section>
+  </aside>
+</div>
