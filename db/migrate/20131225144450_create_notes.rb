@@ -7,11 +7,11 @@ class CreateNotes < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_foreign_key(:notes,:users)
+    # add_foreign_key(:notes,:users)
   end
 
   def down
   	drop_table :notes
-  	remove_foreign_key(:notes,:users)
+  	# remove_foreign_key(:notes,:users)
   end
 end

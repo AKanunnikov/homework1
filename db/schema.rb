@@ -21,8 +21,6 @@ ActiveRecord::Schema.define(:version => 20140113211136) do
     t.datetime "updated_at", :null => false
   end
 
-  add_index "notes", ["user_id"], :name => "notes_user_id_fk"
-
   create_table "users", :force => true do |t|
     t.string   "nickname"
     t.string   "email"
